@@ -1,0 +1,103 @@
+.servic {
+  &__title {
+    @include boldfont;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-bls;
+    margin-bottom: 10px;
+  }
+  &__text {
+    max-width: 407px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+  &__lists {
+    margin-left: 150px;
+    padding: 0;
+  }
+  &__list {
+    padding: 0;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__item::before {
+    content: "";
+    width: 57px;
+    height: 57px;
+    display: inline-block;
+    background-image: url('../../img/security.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+  }
+  &__item:nth-child(2)::before {
+    background-image: url('../../img/calendar.svg');
+  } 
+  &__item:nth-child(3)::before {
+    background-image: url('../../img/car.svg');
+  } 
+  &__items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__items::before {
+    content: "";
+    width: 57px;
+    height: 57px;
+    display: inline-block;
+    background-image: url('../../img/contact.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+  }
+  &__items:nth-child(2)::before {
+    background-image: url("../../img/radio.svg");
+  }
+  &__items:nth-child(3)::before {
+    background-image: url("../../img/security.svg");
+  }
+}
+
+@media screen and(max-width:1199px) {
+    .servic {
+      &__inner {
+        flex-direction: column;
+      }
+      &__item {
+        flex-direction: column;
+        margin-bottom: 16px;
+      }
+      &__lists {
+        margin-left: 0;
+      }
+      &__items {
+        flex-direction: column;
+        margin-bottom: 16px;
+      }
+      &__title {
+        text-align: center;
+      }
+      &__subtitle {
+        text-align: center;
+      }
+      &__text {
+        text-align: center;
+      }
+    }
+}

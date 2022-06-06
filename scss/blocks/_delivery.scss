@@ -1,0 +1,44 @@
+.delivery {
+  margin-bottom: 100px;
+  &__des {
+    border-radius: 5px;
+    background-image: url("../../img/map.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right 51px;
+     background-color: #203067;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    padding-top: 42px;
+    margin-left: 30px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    padding-bottom: 43px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and(max-width:500px) {
+    .delivery {
+      &__des {
+        background-position: right 10px;
+      }
+    }
+}
+
+@media screen and(max-width:398px) {
+  .delivery {
+    &__des {
+      background-position: center 50px;
+    }
+  }
+}

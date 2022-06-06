@@ -1,0 +1,119 @@
+.hero {
+  &__wrapper {
+    display: flex;
+    transform: translateX(0px);
+    transition: all 0.4s ease;
+    padding: 0;
+  }
+  &__block {
+    position: relative;
+  }
+  &__img {
+   max-width: 1180px;
+   height: 300px;
+ }
+ &__title {
+   position: absolute;
+   max-width: 376px;
+   top: 50px;
+   left: 70px;
+   font-weight: 700;
+   margin: 0;
+   font-size: 35px;
+   line-height: 43px;
+   color: #fff;
+ }
+ &__text {
+   position: absolute;
+   top: 150px;
+   left: 70px;
+   max-width: 328px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   color: #fff;
+ }
+ &__btn {
+   position: absolute;
+   bottom: 44px;
+   left: 50px;
+   padding: 13px 81px 14px 47px;
+   background-color: $color-bls;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   margin: 0 auto;
+   text-decoration: none;
+   color: #fff;
+ }
+ &__plus {
+   position: absolute;
+   top: 210px;
+   font-size: 30px;
+   left: 190px;
+   color: #fff;
+   width: 57px;
+   height: 45px;
+   text-align: center;
+ 
+   background: #698AFF;
+   cursor: pointer;
+   }
+  &__next {
+    right: -50px !important;
+  }
+  &__prev {
+    left: -50px !important;
+  }
+}
+
+@media screen and(max-width:1200px) {
+  .hero {
+    &__img {
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and(max-width:922px) {
+  .hero {
+   &__next {
+     right: -30px !important;
+   }
+   &__prev {
+    left: -30px !important;
+  }
+  }
+}
+
+@media screen and(max-width:610px) {
+  .hero {
+   &__next {
+     right: 0px !important;
+   }
+   &__prev {
+    left: 0px !important;
+  }
+  &__title {
+    font-size: 25px;
+  }
+  &__text {
+    font-size: 14px;
+  }
+  }
+}
+
+@media screen and(max-width:610px) {
+  .hero {
+  &__title {
+    font-size: 20px;
+  }
+  &__text {
+    font-size: 12px;
+  }
+  &__btn {
+    font-size: 14px;
+  }
+  }
+}

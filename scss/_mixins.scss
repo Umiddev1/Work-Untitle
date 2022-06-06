@@ -3,3 +3,17 @@
   margin: 0;
   list-style: none;
 }
+
+@mixin fonts {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-blue;
+  transition: color 0.2s ease;
+}
+@mixin boldfont {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}
