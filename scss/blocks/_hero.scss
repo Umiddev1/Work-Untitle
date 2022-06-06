@@ -106,11 +106,14 @@
 
 @media screen and(max-width:610px) {
   .hero {
+    &__des {
+      // padding-top:80px;
+    }
   &__title {
-    font-size: 20px;
+    font-size: 30px;
   }
   &__text {
-    font-size: 12px;
+    font-size: 14px;
   }
   &__btn {
     font-size: 14px;

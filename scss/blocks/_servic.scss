@@ -77,27 +77,32 @@
 @media screen and(max-width:1199px) {
     .servic {
       &__inner {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
       }
       &__item {
-        flex-direction: column;
+        // flex-direction: column;
         margin-bottom: 16px;
+      }
+      &__list {
+        margin: 0 auto;
       }
       &__lists {
         margin-left: 0;
+        margin: 0 auto;
       }
       &__items {
-        flex-direction: column;
         margin-bottom: 16px;
       }
       &__title {
         text-align: center;
       }
       &__subtitle {
-        text-align: center;
-      }
-      &__text {
-        text-align: center;
+       
+        max-width: 258px;
+        font-size: 14px;
       }
     }
 }

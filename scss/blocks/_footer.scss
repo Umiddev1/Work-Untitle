@@ -10,3 +10,14 @@
     color: $color-bls;
   }
 }
+
+@media screen and(max-width:768px) {
+    .footer {
+      &__list {
+        display: none;
+      }
+      &__social-list {
+        display: none;
+      }
+    }
+}

@@ -87,6 +87,14 @@
   }
 }
 
+@media screen and(max-width:375px) {
+  .catalog {
+    &__item {
+      max-width: 350px !important;
+    }
+  }
+}
+
 @media screen and(max-width:372px) {
   .catalog {
     &__item {
