@@ -1,0 +1,93 @@
+.payment {
+  margin-top: 50px;
+  // margin-bottom: 100px;
+  &__wrapper {
+    max-width: 1213px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.05);
+    padding-bottom: 30px;
+  }
+  &__btns {
+    background: #F5F5F5;
+  }
+  &__btn {
+    border: none;
+    background-color: transparent;
+    padding: 21px 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+  }
+  &__list {
+    padding-left: 50px;
+    margin-top: 50px;
+  }
+  &__des {
+    display: none;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000; 
+    margin-bottom: 20px;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-bls;
+    text-decoration: none;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    @include boldfont;
+    font-size: 25px;
+    margin-top: 100px;
+  }
+}
+
+.btn-bg {
+  background-color: #fff;
+}
+.des-block {
+  display: block;
+}
+
+@media screen and(max-width:767px) {
+    .payment {
+      &__btn {
+        padding: 21px 30px;
+
+      }
+    }
+}
+
+@media screen and(max-width:449px) {
+  .payment {
+    &__btn {
+      padding: 21px 20px;
+
+    }
+    &__subtitle {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and(max-width:389px) {
+  .payment {
+    &__btn {
+      padding: 21px 10px;
+    }
+  }
+}

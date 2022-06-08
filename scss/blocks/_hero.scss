@@ -46,6 +46,9 @@
    margin: 0 auto;
    text-decoration: none;
    color: #fff;
+   &:hover {
+     color: #fff;
+   }
  }
  &__plus {
    position: absolute;
@@ -106,9 +109,6 @@
 
 @media screen and(max-width:610px) {
   .hero {
-    &__des {
-      // padding-top:80px;
-    }
   &__title {
     font-size: 30px;
   }

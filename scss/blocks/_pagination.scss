@@ -1,0 +1,50 @@
+.pagination {
+  &__link {
+    @include boldfont;
+    text-decoration: none;
+  }
+  &__middle {
+    display: inline-block;
+    margin: 0 10px;
+    &::before {
+      content: "-";
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 800;
+      color: #000;
+      position: relative;
+      right: 5px
+    }
+    &::after {
+      content: "-";
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 800;
+      color: #000;
+      position: relative;
+      left: 5px
+    }
+  }
+  &__links {
+    @include boldfont;
+    color: #CECECE;
+    text-decoration: none;
+  }
+}
+
+@media screen and(max-width:500px) {
+    .pagination {
+      &__des {
+        margin-top: 10px;
+        margin-left: 30px;
+      }
+      &__link {
+        font-size: 12px;
+        font-weight: 400;
+      }
+      &__links {
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+}

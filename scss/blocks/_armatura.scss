@@ -1,0 +1,83 @@
+.armatura {
+  margin-top: 50px;
+  display: block;
+  &__title {
+    @include boldfont;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  &__bigblock {
+    margin: 0 auto;
+    max-width: 885px;
+    background-color: red;
+    padding: 30px;
+    background: #eef1f3;
+    border-radius: 5px;
+  }
+  &__block {
+    display: flex;
+    // align-items: center;
+    margin-bottom: 20px;
+  }
+  &__blocks {
+    display: flex;
+    align-items: center;
+  }
+  &__block:nth-child(2) {
+    margin-bottom: 0;
+  }
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0
+  }
+
+  &__text {
+    @include fonts;
+    margin: 0;
+  }
+  &__item {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+    padding: 4px 17px;
+    background-color: #fff;
+  }
+  &__items {
+    margin-left: 25px;
+    // margin-bottom: 10px;
+  }
+  &__links {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  &__spn {
+    color: $color-bls;
+    text-decoration: underline;
+  }
+}
+
+@media screen and(max-width:378px) {
+    .armatura {
+      &__link {
+        font-size: 12px;
+      }
+      &__block {
+        flex-direction: column;
+      }
+      &__links {
+        font-size: 9px;
+      }
+    }
+}

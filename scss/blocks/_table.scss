@@ -1,0 +1,146 @@
+.table {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  &__wrapper {
+    margin-bottom: 100px;
+  }
+  &__link {
+    @include fonts;
+    text-decoration: none;
+  }
+  &__cart {
+    padding: 0 20px;
+    background-color: $color-bls;
+    display: inline-block;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &__wrapper {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  &__th { 
+    padding: 9px 0px;
+    text-align: center;
+    background-color: #EEF1F3;
+  }
+  &__data {
+    text-align: center;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__size {
+    margin: 0;
+  }
+  &__length {
+    margin: 0;
+  }
+  &__plus {
+    border: none;
+    background-color: #fff;
+  }
+  &__minus {
+    border: none;
+    background-color: #fff;
+  }
+  &__wrapper tr {
+    transition: all 0.4s ease;
+    border: 1px solid #EEF1F3;
+  }
+  &__wrapper tr:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  }
+  &__response-text {
+    display: none;
+  }
+  &__btns {
+    display: none;
+  }
+}
+.tr-blcok {
+  display: block;
+}
+.tr-none {
+  display: none;
+}
+@media screen and(max-width:500px) {
+    .table {
+      &__head {
+        display: none;
+      }
+      &__wrapper tr {
+        display: flex;
+        flex-direction: column;
+        width: 168px;
+        border: 1px solid #EEF1F3;
+      }
+      &__body {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        padding-bottom: 10px;
+      }
+      &__data {
+        border: none;
+      }
+      &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-bls;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      &__data:nth-child(2) {
+        height: 20px;
+      }
+      &__size {
+        display: none;
+      }
+      &__length {
+        display: none;
+      }
+      &__price {
+        margin-top: 20px;
+        color: $color-bls;
+      }
+      &__response-text {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #CECECE;
+        margin-bottom: 0;
+      }
+      &__cart {
+        width: 116px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      &__btns {
+        display: flex;
+        justify-content: center;
+      }
+      &__wrapper tr:nth-child(5) {
+        display: none;
+      }
+      &__wrapper tr:nth-child(6) {
+        display: none;
+      }
+  }
+}
+
+@media screen and(max-width:375px) {
+    .table {
+      &__wrapper tr {
+        width: 160px;
+      }
+    }
+}

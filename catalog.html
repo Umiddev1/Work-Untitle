@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>catalog</title>
+  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- font -->
+  <!-- icon -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!-- icon -->
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper between-md middle-md">
+          <nav class="header__nav nav">
+            <ul class="nav__list"> 
+              <li class="nav__item"><a class="nav__link" href="#">О компании</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Как заказать</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Достава</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Оплата</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+              <li class="nav__item"><a class="nav__link" href="contact.html">Контакты</a></li>
+            </ul>
+            <a class="nav__close" href="#"><i class='bx bx-x'></i></a>
+          </nav>
+          <ul class="header__social-list"> 
+            <li class="header__social-item">
+              <a class="header__social-link" href="https://telegram.org/" target="_blank"><i class='bx bxl-telegram'></i></a>
+            </li>
+            <li class="header__social-item">
+              <a class="header__social-link" href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            </li>
+            <li class="header__social-item">
+              <a class="header__social-link" href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            </li>
+          </ul>
+      </div>
+      <div class="header__response">
+        <div class="header__response-des">
+          <p class="header__aside-text">Стальные гарантии</p>
+          <h4 class="header__aside-title">Мос<span class="header__aside-spn">Сталь</span>Сервис</h4>
+          <p class="header__aside-text">Интернет магазин металлопроката</p>
+        </div>
+        <div class="header__response-btns">
+          <button class="header__response-btn"><i class='bx bx-menu-alt-left header__response-icon'></i> Меню</button>
+          <button class="header__response-search"><i class='bx bx-search-alt'></i></button>
+          <button class="header__response-cart"><i class='bx bx-cart-alt'></i></button>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__bottom-wrapper between-md between-sm between-xs  middle-md middle-sm middle-xs">
+            <a class="header__bottom-menu" href="#"><i class='bx bx-menu'></i></a>
+            <div class="header__bottom-phones">
+                <p class="header__bottom-text">Пн-Пт: 9:00 до 19:00</p>
+                <a class="header__bottom-phone" href="tel:998937777777">+998 (93) 777-77-77</a>
+            </div>
+            <form class="header__bottom-form">
+              <input class="header__bottom-inp" type="search" placeholder="Поиск по сайту">
+              <span class="header__bottom-search"><i class='bx bx-search-alt-2'></i></span>
+            </form>
+            <div class="header__bottom-carts">
+                <span class="header__bottom-cart"><i class='bx bx-cart-alt'></i></span>
+                <div>
+                  <p class="header__bottom-subtext">Ваша корзина</p>
+                  <a class="header__bottom-price" href="#">402,100сум</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__aside">
+          <div class="header__aside-wrapper">
+            <div class="header__aside-des">
+              <p class="header__aside-text">Стальные гарантии</p>
+              <h4 class="header__aside-title">Мос<span class="header__aside-spn">Сталь</span>Сервис</h4>
+              <p class="header__aside-text">Интернет магазин металлопроката</p>
+              <button class="header__aside-close"><i class='bx bx-x'></i></button>
+            </div>
+            <div>
+              <ul class="header__aside-list">
+                <li class="header__aside-item">
+                  <a class="header__aside-link" href="#">Арматура</a><span><i class='bx bx-plus-circle'></i></span>
+                </li>
+                <li class="header__aside-item">
+                  <a class="header__aside-link" href="#">Катанка</a><span><i class='bx bx-plus-circle'></i></span>
+                </li>
+                <li class="header__aside-item">
+                  <a class="header__aside-link" href="#">Угалок стальной</a><span><i class='bx bx-plus-circle'></i></span>
+                </li>
+                <li class="header__aside-item">
+                  <a class="header__aside-link" href="#">Швеллер</a><span><i class='bx bx-plus-circle'></i></span>
+                </li>
+                <li class="header__aside-item">
+                  <a class="header__aside-link" href="#">Труба ВПГ</a><span><i class='bx bx-plus-circle'></i></span>
+                </li>
+                <li class="header__aside-item">
+                  <a class="header__aside-link" href="#">Труба профильная</a><span><i class='bx bx-plus-circle'></i></span>
+                </li>
+              </ul>
+              <button class="header__aside-btn">Нужна консультация</button>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero__des"> 
+              <h2 class="hero__title">Специальные цены на катанку</h2>
+              <p class="hero__text">Только до конца снижение цен на весь ассортимент катанки</p>
+              <a class="hero__btn" href="armatura.html">В каталог</a>
+              <span class="hero__plus">+</span>
+            </div>
+            <div class="hero__btns">
+              <button class="carousel-control-prev hero__prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="hero__icon-prev carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next hero__next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="hero__icon-next carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <img  src="img/hero-bg.png" class="hero__img d-block w-100" alt="hero-bg">
+          </div>
+          <div class="carousel-item">
+            <div class="hero__des"> 
+              <h2 class="hero__title">Специальные цены на катанку</h2>
+              <p class="hero__text">Только до конца снижение цен на весь ассортимент катанки</p>
+              <a class="hero__btn" href="#">В каталог</a>
+              <span class="hero__plus">+</span>
+            </div>
+            <div class="hero__btns">
+              <button class="carousel-control-prev hero__prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="hero__icon-prev carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next hero__next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="hero__icon-next carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="hero__btns">
+              <button class="carousel-control-prev hero__prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="hero__icon-prev carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next hero__next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="hero__icon-next carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <img src="img/hero-bg.png" class="hero__img d-block w-100" alt="hero-bg">
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  <main>
+    <section class="catalog">
+      <div class="container">
+          <div class="catalog__wrapper">
+            <ul class="catalog__list row">
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <a style="text-decoration: none;" href="armatura.html">
+                      <h4 class="catalog__title">Арматура</h4>
+                      <p class="catalog__text">от 14руб/м</p>
+                      <button class="catalog__plus">+</button>
+                    </a>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <h4 class="catalog__title">Катанка</h4>
+                    <p class="catalog__text">от 14руб/м</p>
+                    <button class="catalog__plus">+</button>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <h4 class="catalog__title">Уголки</h4>
+                    <p class="catalog__text">от 14руб/м</p>
+                    <button class="catalog__plus">+</button>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <h4 class="catalog__title">Швеллер</h4>
+                    <p class="catalog__text">от 14руб/м</p>
+                    <button class="catalog__plus catalog__pluss">+</button>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <h4 class="catalog__title">Труба ВПГ</h4>
+                    <p class="catalog__text">от 14руб/м</p>
+                    <button class="catalog__plus catalog__pluss">+</button>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <h4 class="catalog__title">Труба <br>
+                      профильная</h4>
+                    <p class="catalog__text">от 14руб/м</p>
+                    <button class="catalog__plus">+</button>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <h4 class="catalog__title">Труба <br>
+                      профильная</h4>
+                    <p class="catalog__text">от 14руб/м</p>
+                    <button class="catalog__plus">+</button>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <h4 class="catalog__title">Труба <br>
+                      профильная</h4>
+                    <p class="catalog__text">от 14руб/м</p>
+                    <button class="catalog__plus">+</button>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <h4 class="catalog__title">Труба <br>
+                      профильная</h4>
+                    <p class="catalog__text">от 14руб/м</p>
+                    <button class="catalog__plus">+</button>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <h4 class="catalog__title">Труба <br>
+                      профильная</h4>
+                    <p class="catalog__text">от 14руб/м</p>
+                    <button class="catalog__plus">+</button>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <h4 class="catalog__title">Труба <br>
+                      профильная</h4>
+                    <p class="catalog__text">от 14руб/м</p>
+                    <button class="catalog__plus">+</button>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item col-md-4 col-sm-6">
+                <div class="catalog__wrappers">
+                  <div class="catalog__inner">
+                    <h4 class="catalog__title">Труба <br>
+                      профильная</h4>
+                    <p class="catalog__text">от 14руб/м</p>
+                    <button class="catalog__plus">+</button>
+                  </div>
+                  <div class="catalog__imgs">
+                    <img class="catalog__img" src="img/catalog-armatura.png" alt="catalog-armatura">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__wrapper">
+        <div class="map__des">
+          <ul class="map__list"> 
+            <li class="map__item">
+              <h2 class="map__title">ООО “МосСтальСервис”</h2>
+              <div class="map__inner">
+                <span class="map__spn">ИНН: 2425367783</span>
+                <span class="map__spn">КПП: 24252677585</span>
+              </div>
+            </li>
+            <li class="map__item">
+              <p class="map__text">Пн-Пт: 9:00 до 19:00</p>
+              <p><address class="map__subtext">300013, г Ташкент, Торховский проезд, д/б 1<address><p>
+            </li>
+            <li class="map__item">
+              <p class="map__text">Пн-Пт: 9:00 до 19:00</p> 
+              <p><a class="map__link" href="tel:998937777777">+998(93)777-77-77</a></p>
+            </li>
+            <li class="map__item">
+              <p class="map__text">e-mail</p>
+              <p><a class="map__link" href="#">info@mossteelsevice.ru</a></p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="map__maps">
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95837.58129580766!2d69.21591318506022!3d41.353996579096865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8cb23888afb9%3A0x31c22300affbc36a!2z0K7QvdGD0YHQsNCx0LDQtNGB0LrQuNC5INGA0LDQudC-0L0sINCi0LDRiNC60LXQvdGCLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1654449304074!5m2!1sru!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="nav__list footer__list"> 
+            <li class="nav__item footer__item"><a class="nav__link footer__link" href="#">О компании</a></li>
+            <li class="nav__item footer__item"><a class="nav__link footer__link" href="#">Как заказать</a></li>
+            <li class="nav__item footer__item"><a class="nav__link footer__link" href="#">Достава</a></li>
+            <li class="nav__item footer__item"><a class="nav__link footer__link" href="#">Оплата</a></li>
+            <li class="nav__item footer__item"><a class="nav__link footer__link" href="#">Отзывы</a></li>
+            <li class="nav__item footer__item"><a class="nav__link footer__link" href="#">Контакты</a></li>
+          </ul>
+          <ul class="footer__social-list header__social-list between-md between-sm middle-md middle-sm"> 
+            <li class="footer__social-item header__social-item">
+              <a class="footer__social-link" href="https://telegram.org/" target="_blank"><i class='bx bxl-telegram'></i></a>
+            </li>
+            <li class="footer__social-item header__social-item">
+              <a class="footer__social-link" href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            </li>
+            <li class="footer__social-item header__social-item">
+              <a class="footer__social-link" href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
